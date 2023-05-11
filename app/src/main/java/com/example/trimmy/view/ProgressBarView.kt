@@ -28,18 +28,18 @@ class ProgressBarView @JvmOverloads constructor(context: Context, attrs: Attribu
         init()
     }
 
-//    private fun init() {
-//        val lineProgress = ContextCompat.getColor(context, R.color.progress_color)
-//        val lineBackground = ContextCompat.getColor(context, R.color.background_progress_color)
-//
-//        mProgressHeight = context.resources.getDimensionPixelOffset(R.dimen.progress_video_line_height)
-//
-//        mBackgroundColor.isAntiAlias = true
-//        mBackgroundColor.color = lineBackground
-//
-//        mProgressColor.isAntiAlias = true
-//        mProgressColor.color = lineProgress
-//    }
+    private fun init() {
+        val lineProgress = ContextCompat.getColor(context, R.color.progress_color)
+        val lineBackground = ContextCompat.getColor(context, R.color.background_progress_color)
+
+        mProgressHeight = context.resources.getDimensionPixelOffset(R.dimen.progress_video_line_height)
+
+        mBackgroundColor.isAntiAlias = true
+        mBackgroundColor.color = lineBackground
+
+        mProgressColor.isAntiAlias = true
+        mProgressColor.color = lineProgress
+    }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
